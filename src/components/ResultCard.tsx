@@ -22,6 +22,7 @@ const ResultCard: React.FC<ResultCardProps> = ({
     ["Correct", score],
     ["Incorrect", questions.length - score],
   ];
+  const options = { colors: ["#0a0", "#FF5261"] };
   return (
     <section className="bg-white rounded-2xl shadow-xl md:w-1/2 mx-auto p-8 h-auto">
       <h1 className="text-4xl font-semibold mb-6 text-center text-[#FF5261]">
@@ -74,7 +75,7 @@ const ResultCard: React.FC<ResultCardProps> = ({
           </ul>
         </div>
         <div className="w-1/2">
-          <Chart chartType="PieChart" data={data}></Chart>
+          <Chart chartType="PieChart" data={data} options={options}></Chart>
         </div>
       </div>
     </section>
