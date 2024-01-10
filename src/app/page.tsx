@@ -2,19 +2,27 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="w-[100vw] h-[100vh] container]">
-      <div className="min-h-screen flex items-center justify-center bg-blue-100">
-        <div className="bg-white p-8 rounded shadow-md max-w-md">
-          <h1 className="text-3xl font-bold mb-4">Quiz App</h1>
-          <p className="text-gray-600 mb-8">
-            Test your knowledge with our quizzes!
-          </p>
-          <Link href="/quiz">
-            <button className="bg-[#FF5261] hover:bg-[#ec4e5b]  text-white py-2 px-4 rounded">
-              Get Started
-            </button>
-          </Link>
-        </div>
+    <main className="container mx-auto h-screen flex items-center justify-between overflow-hidden">
+      <div className="p-8 text-gray-800">
+        <h1 className="text-5xl font-extrabold mb-4 text-blue-900">
+          Welcome to Quizzy!
+        </h1>
+        <p className="text-grey-700 text-xl mb-8">
+          Expand your knowledge and have fun with Quizzy. Choose from a variety
+          of quizzes to test your expertise!
+        </p>
+        <Link href="/quiz">
+          <button className="bg-[#FF5261] hover:bg-[#ec4e5b] text-white py-3 px-6 rounded-full focus:outline-none focus:ring focus:border-blue-300 text-lg">
+            Get Started
+          </button>
+        </Link>
+      </div>
+      <div>
+        <img
+          src="/Learning-cuate.png"
+          alt="Learning illustration"
+          className="w-full h-full object-cover"
+        />
       </div>
     </main>
   );
