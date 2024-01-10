@@ -73,7 +73,7 @@ const ResultCard: React.FC<ResultCardProps> = ({
             ))}
           </ul>
         </div>
-        <div className="w-1/3">
+        <div className="w-1/2">
           <Chart chartType="PieChart" data={data}></Chart>
         </div>
       </div>
