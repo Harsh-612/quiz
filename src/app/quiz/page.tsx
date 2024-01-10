@@ -66,7 +66,7 @@ const Page: React.FC = () => {
 
   return (
     <>
-      <main className="bg-blue-50 h-screen w-screen flex justify-center items-center">
+      <main className="bg-blue-100 h-screen w-screen flex justify-center items-center">
         {questionNumber <= questions.length ? (
           <QuizCard
             questionNumber={questionNumber}
