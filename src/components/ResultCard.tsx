@@ -22,7 +22,6 @@ const ResultCard: React.FC<ResultCardProps> = ({
     ["Correct", score],
     ["Incorrect", questions.length - score],
   ];
-  const options = { legend: "none" };
   return (
     <section className="bg-white rounded-2xl shadow-xl md:w-1/2 mx-auto p-8 h-auto">
       <h1 className="text-4xl font-semibold mb-6 text-center text-[#FF5261]">
@@ -75,7 +74,7 @@ const ResultCard: React.FC<ResultCardProps> = ({
           </ul>
         </div>
         <div className="w-1/3">
-          <Chart chartType="PieChart" data={data} options={options}></Chart>
+          <Chart chartType="PieChart" data={data}></Chart>
         </div>
       </div>
     </section>
